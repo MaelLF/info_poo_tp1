@@ -19,7 +19,7 @@ class Dé (object):  #Définition de la classe Dé
 
 
 
-class Joueur (object) : #Définition de la classe Joueur : Hérédité à la classe Dé
+class Joueur (object) : #Définition de la classe Joueur : Relation de composition à la classe Dé
     def __init__(self,dé1 = Dé(),dé2 = Dé(), dé3 = Dé()):   #Définition des composants de la classe trois dé initialisé à 0 par défaut, une liste de valeur des dé et les points
         self.déliste=[dé1,dé2,dé3]
         self.result=[0,0,0]
