@@ -1,4 +1,4 @@
-from tp1_ex3 import *   #Librairie de définition de la classe Triangle : relation d'Héritage
+from tp1_ex3 import *   #Librairie de définition de la classe Triangle : relation de composition
 
 #Auteur : Le Floch Mael
 #Date de création : 7 Fevrier 2024
@@ -18,9 +18,9 @@ class Couleur (object):
 
 class Object3D (object):
     def __init__(self,centre_grav : Vecteur, couleur : Couleur) : #Définition de la classe et de ces composants une couleur, une liste de triangle et un centre de gravité
-        self.centre_grav = centre_grav
-        self.couleur = couleur  #relation d'hérédité à la classe Couleur
-        self.list_triangles = []    #relation d'hérédité à la classe triangle
+        self.centre_grav = centre_grav #relation d'agrégation à la classe Vecteur
+        self.couleur = couleur  #relation de composition à la classe Couleur
+        self.list_triangles = []    #relation de composition à la classe triangle
 
     def afficher (self): #Méthode d'affichage de la liste des triangles composants l'object
         for i in range(0,len(self.list_triangles)): #itération sur la liste des triangles
