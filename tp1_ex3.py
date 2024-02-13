@@ -1,5 +1,5 @@
 import math
-from tp1_ex2 import Vecteur #Librairie de définition de la classe Vecteur : relation d'Héritage
+from tp1_ex2 import Vecteur #Librairie de définition de la classe Vecteur : relation de composition
 
 #Auteur : Le Floch Mael
 #Date de création : 7 Fevrier 2024
